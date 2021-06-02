@@ -30,7 +30,7 @@ namespace tempconversionapi.Controllers
 
             switch (tempFrom)
             {
-                case TempretureEnum.Celcius:
+                case TempretureEnum.Celsius:
                     _tempreture.SetCelcius(temp);
 
                     if (tempTo == TempretureEnum.Fahrenheit)
@@ -43,7 +43,7 @@ namespace tempconversionapi.Controllers
                 case TempretureEnum.Fahrenheit:
                     _tempreture.SetFahrenheit(temp);
 
-                    if (tempTo == TempretureEnum.Celcius)
+                    if (tempTo == TempretureEnum.Celsius)
                         retValue =  _tempreture.GetCelcius();
 
                     if (tempTo == TempretureEnum.Kelvin)
@@ -53,7 +53,7 @@ namespace tempconversionapi.Controllers
                 case TempretureEnum.Kelvin:
                     _tempreture.SetKelvin(temp);
 
-                    if (tempTo == TempretureEnum.Celcius)
+                    if (tempTo == TempretureEnum.Celsius)
                         retValue =  _tempreture.GetCelcius();
 
                     if (tempTo == TempretureEnum.Fahrenheit)

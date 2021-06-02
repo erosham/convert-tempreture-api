@@ -7,7 +7,7 @@ namespace tempconversionapi.Models
 {
     public enum TempretureEnum
     {
-        Celcius =1,
+        Celsius =1,
         Fahrenheit,
         Kelvin
     }
