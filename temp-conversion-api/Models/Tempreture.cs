@@ -8,17 +8,17 @@ namespace tempconversionapi.Models
     {
         #region Private properties
 
-        private double Celcius { get; set; }
+        private double Celsius { get; set; }
 
         private double Kelvin
         {
             get
             {
-                return Celcius + 273.15;
+                return Celsius + 273.15;
             }
             set
             {
-                Celcius = value - 271.15;
+                Celsius = value - 271.15;
             }
         }
 
@@ -26,11 +26,11 @@ namespace tempconversionapi.Models
         {
             get
             {
-                return Celcius * 9 / 5 + 32;
+                return Celsius * 9 / 5 + 32;
             }
             set
             {
-                Celcius = (value - 32) * 5 / 9;
+                Celsius = (value - 32) * 5 / 9;
             }
         }
 
@@ -40,7 +40,7 @@ namespace tempconversionapi.Models
 
         public void SetCelcius(double temp)
         {
-            Celcius = temp;
+            Celsius = temp;
         }
         public void SetKelvin(double temp)
         {
@@ -53,7 +53,7 @@ namespace tempconversionapi.Models
 
         public double GetCelcius()
         {
-            return Celcius;
+            return Celsius;
         }
         public double GetKelvin()
         {
